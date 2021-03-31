@@ -11,11 +11,18 @@ By default, this program is intended to drive a simple LED matrix of 7 rows by 2
 
 But to control them separately, I choosed to split each line in two sublines. Line 1 is made of half-lines 1 and 2, line 2 made of half-lines 3 and 4, etc. And I turn half-lines on each in sequence. Here is the global sketch below, with default GPIO numbers (you can change them in `screen.py`).
 
-`       2  3  4  17 27 22 10 9  11 0  5  6  13 19  2  3  4  17 27 22 10 9  11 0  5  6  13 19<br />
-  7 --  o  o  o  o  o  o  o  o  o  o  o  o  o  o | o  o  o  o  o  o  o  o  o  o  o  o  o  o  -- 14<br />
-  1 --  o  o  o  o  o  o  o  o  o  o  o  o  o  o | o  o  o  o  o  o  o  o  o  o  o  o  o  o  -- 25  
- 12 --  o  o  o  o  o  o  o  o  o  o  o  o  o  o | o  o  o  o  o  o  o  o  o  o  o  o  o  o  -- 8  
- 16 --  o  o  o  o  o  o  o  o  o  o  o  o  o  o | o  o  o  o  o  o  o  o  o  o  o  o  o  o  -- 15  
- 20 --  o  o  o  o  o  o  o  o  o  o  o  o  o  o | o  o  o  o  o  o  o  o  o  o  o  o  o  o  -- 18  
- 21 --  o  o  o  o  o  o  o  o  o  o  o  o  o  o | o  o  o  o  o  o  o  o  o  o  o  o  o  o  -- 23  
- 26 --  o  o  o  o  o  o  o  o  o  o  o  o  o  o | o  o  o  o  o  o  o  o  o  o  o  o  o  o  -- 24`
+`       2  3  4  17 27 22 10 9  11 0  5  6  13 19  2  3  4  17 27 22 10 9  11 0  5  6  13 19`
+
+`  7 --  o  o  o  o  o  o  o  o  o  o  o  o  o  o | o  o  o  o  o  o  o  o  o  o  o  o  o  o  -- 14`
+
+`  1 --  o  o  o  o  o  o  o  o  o  o  o  o  o  o | o  o  o  o  o  o  o  o  o  o  o  o  o  o  -- 25`
+
+` 12 --  o  o  o  o  o  o  o  o  o  o  o  o  o  o | o  o  o  o  o  o  o  o  o  o  o  o  o  o  -- 8`
+
+` 16 --  o  o  o  o  o  o  o  o  o  o  o  o  o  o | o  o  o  o  o  o  o  o  o  o  o  o  o  o  -- 15`
+
+` 20 --  o  o  o  o  o  o  o  o  o  o  o  o  o  o | o  o  o  o  o  o  o  o  o  o  o  o  o  o  -- 18`
+
+` 21 --  o  o  o  o  o  o  o  o  o  o  o  o  o  o | o  o  o  o  o  o  o  o  o  o  o  o  o  o  -- 23`
+
+` 26 --  o  o  o  o  o  o  o  o  o  o  o  o  o  o | o  o  o  o  o  o  o  o  o  o  o  o  o  o  -- 24`
